@@ -1,0 +1,5 @@
+forumpay_configuration_form:
+  path: /forumpay/configuration
+  methods: [GET, POST]
+  defaults:
+    _controller: 'ForumPay\PaymentGateway\PrestaShopModule\Controller\ConfigurationController::index'

@@ -1,0 +1,12 @@
+{extends file='page.tpl'}
+
+{block name='page_content'}
+    <div class="content">
+        <div id="ForumPayPaymentGatewayWidgetContainer"></div>
+        <span id="forumpay-apibase" data="{$apiBase}"></span>
+        <span id="forumpay-returnurl" data="{$returnUrl}"></span>
+        <span id="forumpay-cancelurl" data="{$cancelUrl}"></span>
+    </div>
+{/block}
+
+{hook h='displayFooter'}

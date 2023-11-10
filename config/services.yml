@@ -1,0 +1,27 @@
+services:
+  _defaults:
+    public: true
+  forumpay.payment_gateway.presta_shop_module.form.type.configuration_text:
+    class: 'ForumPay\PaymentGateway\PrestaShopModule\Form\ConfigurationFormType'
+    parent: 'form.type.translatable.aware'
+    public: true
+    tags:
+      - { name: form.type }
+
+  forumpay.payment_gateway.presta_shop_module.form.configuration_data_configuration:
+    class: ForumPay\PaymentGateway\PrestaShopModule\Form\ConfigurationDataConfiguration
+    arguments: ['@prestashop.adapter.legacy.configuration']
+
+  forumpay.payment_gateway.presta_shop_module.form.configuration_form_data_provider:
+    class: 'ForumPay\PaymentGateway\PrestaShopModule\Form\ConfigurationFormDataProvider'
+    arguments:
+      - '@forumpay.payment_gateway.presta_shop_module.form.configuration_data_configuration'
+
+  forumpay.payment_gateway.presta_shop_module.form.configuration_form_data_handler:
+    class: 'PrestaShop\PrestaShop\Core\Form\Handler'
+    arguments:
+      - '@form.factory'
+      - '@prestashop.core.hook.dispatcher'
+      - '@forumpay.payment_gateway.presta_shop_module.form.configuration_form_data_provider'
+      - 'ForumPay\PaymentGateway\PrestaShopModule\Form\ConfigurationFormType'
+      - 'Configuration'
