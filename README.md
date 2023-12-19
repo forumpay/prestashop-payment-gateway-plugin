@@ -6,7 +6,7 @@
 > Make sure you have at least PrestaShop Version 8.1.0 or higher.
 
 > You should already have downloaded the latest release of ForumPay plugin from [this link](https://github.com/forumpay/prestashop-payment-gateway-plugin/releases/latest).
-Download the file named prestashop-payment-gateway-plugin-2.0.0.zip
+Download the file named prestashop-payment-gateway-plugin-2.0.1.zip
 
 ## Installation
 

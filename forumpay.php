@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-define('FORUMPAY_VERSION', '2.0.0');
+define('FORUMPAY_VERSION', '2.0.1');
 
 use PrestaShop\PrestaShop\Core\Payment\PaymentOption;
 

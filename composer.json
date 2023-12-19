@@ -2,10 +2,10 @@
   "name": "prestashop/forumpay",
   "description": "Crypto payment gateway",
   "type": "prestashop-module",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "require": {
     "php": ">=7.4",
-    "forumpay/payment-gateway-php-client": "^v1.0.4",
+    "forumpay/payment-gateway-php-client": "^v1.1.1",
     "psr/log":"^1.1.4"
   },
   "require-dev": {
