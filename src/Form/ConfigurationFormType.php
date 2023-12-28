@@ -85,7 +85,7 @@ class ConfigurationFormType extends TranslatorAwareType
             ->add('api_url_override', TextType::class, [
                 'label' => $this->trans('Custom environment URL:', 'Modules.ForumPay.Admin'),
                 'help' => $this->trans(
-                    'URL to the api server. This value will override default environment.',
+                    'Optional: URL to the API server. This value will override the default setting. Only used for debugging.',
                     'Modules.ForumPay.Admin'
                 ),
                 'required' => false,

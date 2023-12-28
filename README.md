@@ -6,7 +6,7 @@
 > Make sure you have at least PrestaShop Version 8.1.0 or higher.
 
 > You should already have downloaded the latest release of ForumPay plugin from [this link](https://github.com/forumpay/prestashop-payment-gateway-plugin/releases/latest).
-Download the file named prestashop-payment-gateway-plugin-2.0.1.zip
+Download the file named prestashop-payment-gateway-plugin-2.0.2.zip
 
 ## Installation
 
@@ -55,26 +55,38 @@ Navigate to **Modules > Module Manager > Payment**, find the Forumpay module and
 ### Configuration details:
 
 1. **Title**
-   The label of the payment method that is displayed when your customer is prompted to choose one.
-   You can leave default or set it to something like *Pay with crypto*.
+   The label of the payment method that is displayed when user is prompted to choose one. You can leave default or set it to something like *Pay with crypto*.
 2. **Description**
-   Additional information along with *Title*.
-3. **POS ID**
-   Identifier for payments from this webshop to be identified in your ForumPay dashboard.
-   Must be a unique string. E.g.: prestashop1
+   The additional description of the payment method that is displayed under the title.
+3. **Environment**
+   Dropdown lets you switch between 'Production' and 'Sandbox' modes.
+   Use 'Production' for processing real transactions in a live environment and
+   'Sandbox' for safe testing without financial implications.
 4. **API User**
-   Unique ForumPay API-key identifier that you have to generate in the Forumpay dashboard.
-   It can be found in your **Profile** section.
+   This is our identifier that we need to access the payment system.
+   It can be found in your **Profile**.
    [Go to profile >](https://dashboard.forumpay.com/pay/userPaymentGateway.api_settings)
-5. **API Secret**
-   *Important:* never share it to anyone!
-   API Secret consists of two parts. When generated in [ForumPay dashboard](https://dashboard.forumpay.com/pay/userPaymentGateway.api_settings), the first one will be displayed in your profile, while the second part will be sent to your e-mail. You need to enter both parts here (one after the other).
-6. **Initial Order Status**
-   Is a one of internal order statuses assigned to a new order when ForumPay payment is started.
-7. **Canceled Order Status**
-   Is a configured status assigned to an existing order when payment gets cancelled.
-8. **Success Order Status**
-   Is a configured status assigned to an order after customer successfully completes the purchase using ForumPay.
+5. **API Key**
+   _Important:_ never share it to anyone!
+   Think of it as a password.
+   API Secret consists of two parts. When generated in [ForumPay dashboard](https://dashboard.forumpay.com/pay/userPaymentGateway.api_settings),
+   the first one will be displayed in your profile, while the second part will be sent to your e-mail.
+   You need to enter both parts here (one after the other).
+6. **POS ID**
+   This is how payments coming to your wallets are going to be identified.
+   Special characters are not allowed. Allowed characters are: `[A-Za-z0-9._-]` (e.g. `my-shop`, `my_shop`).
+7. **Initial Order Status**
+   Which status the order gets when user starts the payment.
+8. **Canceled Order Status**
+   Which status the order gets once user cancels the payment.
+9. **Success Order Status**
+   Which status the order gets once user successfully completes the payment.
+10. **Custom environment URL**
+    Optional: URL to the API server. This value will override the default setting. Only used for debugging.
+11. **Debug**
+    Allows immediate transaction approval without waiting for network confirmations, enhancing speed but with increased risk.
+12. **Accept Instant (Zero) Confirmations**
+    Allows immediate transaction approval without waiting for network confirmations, enhancing speed but with increased risk.
 
 Don't forget to click *Save* button after the settings are filled in.
 
