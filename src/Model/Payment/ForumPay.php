@@ -53,7 +53,6 @@ class ForumPay
             sprintf(
                 'fp-pgw[%s] PS %s on PHP %s',
                 $configuration->getPluginVersion(),
-                'WC',
                 $configuration->getPrestaShopVersion(),
                 phpversion()
             ),

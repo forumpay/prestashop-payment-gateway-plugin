@@ -102,7 +102,7 @@ class ConfigurationFormType extends TranslatorAwareType
             ])
             ->add('enabled', SwitchType::class, [
                 'label' => $this->trans('Enabled', 'Modules.ForumPay.Admin'),
-                'help' => $this->trans('Enable ForumPay Payment Module', 'Modules.ForumPay.Admin'),
+                'help' => $this->trans('Enable ForumPay Crypto Payments Module', 'Modules.ForumPay.Admin'),
                 'required' => false,
             ]);
     }

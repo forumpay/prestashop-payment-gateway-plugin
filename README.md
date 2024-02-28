@@ -1,4 +1,4 @@
-# PrestaShop Forumpay payment module
+# ForumPay Crypto Payments for PrestaShop
 # Installation guide
 
 ## Requirements
@@ -6,7 +6,7 @@
 > Make sure you have at least PrestaShop Version 8.1.0 or higher.
 
 > You should already have downloaded the latest release of ForumPay plugin from [this link](https://github.com/forumpay/prestashop-payment-gateway-plugin/releases/latest).
-Download the file named prestashop-payment-gateway-plugin-2.0.2.zip
+Download the file named prestashop-payment-gateway-plugin-2.0.3.zip
 
 ## Installation
 
@@ -84,7 +84,7 @@ Navigate to **Modules > Module Manager > Payment**, find the Forumpay module and
 10. **Custom environment URL**
     Optional: URL to the API server. This value will override the default setting. Only used for debugging.
 11. **Debug**
-    Allows immediate transaction approval without waiting for network confirmations, enhancing speed but with increased risk.
+    When enabled all log levels, including debug log level, will be recorded. Only used for debugging.
 12. **Accept Instant (Zero) Confirmations**
     Allows immediate transaction approval without waiting for network confirmations, enhancing speed but with increased risk.
 

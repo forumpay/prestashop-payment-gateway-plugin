@@ -1,11 +1,12 @@
 {
-  "name": "prestashop/forumpay",
-  "description": "Crypto payment gateway",
+  "name": "forumpay/forumpay-prestashop",
+  "description": "ForumPay Crypto Payments for PrestaShop",
   "type": "prestashop-module",
-  "version": "2.0.2",
+  "version": "2.0.3",
+  "license": "OSL-3.0",
   "require": {
     "php": ">=7.4",
-    "forumpay/payment-gateway-php-client": "^v1.1.1",
+    "forumpay/payment-gateway-php-client": "^v1.1.3",
     "psr/log":"^1.1.4"
   },
   "require-dev": {

@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-define('FORUMPAY_VERSION', '2.0.2');
+define('FORUMPAY_VERSION', '2.0.3');
 
 use PrestaShop\PrestaShop\Core\Payment\PaymentOption;
 
 /**
- * ForumPay payment module class
+ * ForumPay Crypto Payments class
  */
 class ForumPay extends PaymentModule
 {
